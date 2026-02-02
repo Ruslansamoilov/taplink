@@ -6,12 +6,34 @@
   <title>aleks_samoiov</title>
 
   <style>
+    /* Космический фон */
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f7f7f7;
-      color: #222;
+      color: white;
       text-align: center;
+      background: radial-gradient(circle at top, #2b1055, #000010);
+      overflow-x: hidden;
+    }
+
+    /* Звёзды */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: 
+        radial-gradient(2px 2px at 20% 30%, white, transparent),
+        radial-gradient(1px 1px at 80% 40%, white, transparent),
+        radial-gradient(2px 2px at 50% 70%, white, transparent),
+        radial-gradient(1px 1px at 10% 90%, white, transparent),
+        radial-gradient(2px 2px at 90% 10%, white, transparent);
+      background-repeat: repeat;
+      background-size: 300px 300px;
+      opacity: 0.6;
+      z-index: -1;
     }
 
     .container {
@@ -20,14 +42,13 @@
       padding: 50px 20px;
     }
 
+    /* Аватар */
     .avatar {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      border: 3px solid gold;
       margin-bottom: 15px;
       object-fit: cover;
-      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
     }
 
     h1 {
@@ -37,14 +58,14 @@
 
     p {
       font-size: 16px;
-      color: #555;
+      color: rgba(255, 255, 255, 0.8);
       margin-bottom: 35px;
     }
 
     /* Кнопки */
     .link {
       display: block;
-      background: white;
+      background: rgba(255, 255, 255, 0.95);
       color: #0088cc;
       text-decoration: none;
       padding: 16px;
@@ -52,14 +73,7 @@
       border-radius: 14px;
       font-size: 17px;
       font-weight: bold;
-
-      /* Золотая окантовка */
-      .link {
-  border: 3px solid #FFD700;
-  box-shadow: 0 0 12px #FFD700;
-}
-
-     /* Тень */
+      border: 3px solid #FFD700;
       box-shadow: 0 4px 12px rgba(0,0,0,0.08);
       transition: 0.25s;
     }
@@ -68,21 +82,18 @@
     .link:hover {
       transform: scale(1.04);
       background: #fff9e6;
-
-      /* Золотое свечение */
       box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
     }
 
     footer {
       margin-top: 35px;
       font-size: 13px;
-      color: #888;
+      color: rgba(255,255,255,0.6);
     }
   </style>
 </head>
 
 <body>
-
   <div class="container">
 
     <!-- Аватар -->
@@ -95,7 +106,7 @@
     <p>Добро пожаловать! Связь со мной:</p>
 
     <!-- Telegram -->
-    <a class="link" href="https://t.me/alleks_rus" target="_blank">
+    <a class="link" href="https://t.me/aleks_rus" target="_blank">
       📩 Telegram
     </a>
 
@@ -109,10 +120,9 @@
       💬 WhatsApp
     </a>
 
-    <footer>© 2026 aleks_samoiov</footer>
+    <footer>© 2025 aleks_samoiov</footer>
 
   </div>
-
 </body>
 </html>
 
