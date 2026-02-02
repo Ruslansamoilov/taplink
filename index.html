@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>aleks_samoiov</title>
+
   <style>
     body {
       margin: 0;
@@ -20,12 +21,13 @@
     }
 
     .avatar {
-      width: 110px;
-      height: 110px;
+      width: 120px;
+      height: 120px;
       border-radius: 50%;
-      border: 3px solid #ddd;
+      border: 3px solid gold;
       margin-bottom: 15px;
       object-fit: cover;
+      box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
     }
 
     h1 {
@@ -39,35 +41,33 @@
       margin-bottom: 35px;
     }
 
+    /* Кнопки */
     .link {
-  display: block;
-  background: white;
-  color: #0088cc;
-  text-decoration: none;
-  padding: 16px;
-  margin: 14px 0;
-  border-radius: 14px;
-  font-size: 17px;
-  font-weight: bold;
+      display: block;
+      background: white;
+      color: #0088cc;
+      text-decoration: none;
+      padding: 16px;
+      margin: 14px 0;
+      border-radius: 14px;
+      font-size: 17px;
+      font-weight: bold;
 
-  /* Золотая окантовка */
-  border: 2px solid gold;
+      /* Золотая окантовка */
+      border: 2px solid gold;
 
-  /* Тень */
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: 0.25s;
-}
-
+      /* Тень */
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.25s;
     }
 
-   .link:hover {
-  transform: scale(1.03);
-  background: #fff9e6;
+    /* Эффект при наведении */
+    .link:hover {
+      transform: scale(1.04);
+      background: #fff9e6;
 
-  /* Золотое свечение */
-  box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
-}
-
+      /* Золотое свечение */
+      box-shadow: 0 0 18px rgba(255, 215, 0, 0.7);
     }
 
     footer {
@@ -77,9 +77,11 @@
     }
   </style>
 </head>
+
 <body>
 
   <div class="container">
+
     <!-- Аватар -->
     <img class="avatar" src="ruslan.jpg" alt="Ruslan">
 
@@ -87,24 +89,27 @@
     <h1>Ruslan</h1>
 
     <!-- Описание -->
-    <p>Добро пожаловать! Связь со мной через Telegram</p>
+    <p>Добро пожаловать! Связь со мной:</p>
 
-    <!-- Telegram кнопка -->
-<a class="link" href="https://t.me/aleks_rus" target="_blank">
-  📩 Telegram
-</a>
+    <!-- Telegram -->
+    <a class="link" href="https://t.me/alleks_rus" target="_blank">
+      📩 Telegram
+    </a>
 
-<a class="link" href="https://instagram.com/torin4883" target="_blank">
-  📷 Instagram
-</a>
+    <!-- Instagram -->
+    <a class="link" href="https://instagram.com/torin4883" target="_blank">
+      📷 Instagram
+    </a>
 
-<a class="link" href="https://wa.me/995599388695" target="_blank">
-  💬 WhatsApp
-</a>
-</a>
-</a>
-    <footer>© 2026 Ruslan</footer>
+    <!-- WhatsApp -->
+    <a class="link" href="https://wa.me/995599388695" target="_blank">
+      💬 WhatsApp
+    </a>
+
+    <footer>© 2026 aleks_samoiov</footer>
+
   </div>
 
 </body>
 </html>
+
